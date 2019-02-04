@@ -18,6 +18,8 @@ class EstudianteController extends Controller
 
     public function store(Request $request)
     {
+    	//http://localhost:8000/api/estudiantes/{"id_estudiante":"206694","nombre":"Jose","carrera":"ISW"}
+      //return Article::create($request->all());
       $estudiante = Estudiante::create([
         'id_estudiante' => $request->id_estudiante,
         'nombre' => $request->nombre,
